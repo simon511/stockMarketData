@@ -1,0 +1,9 @@
+{% if latest_stock_list %}
+    <ul>
+    {% for stock in latest_stock_list %}
+        <li><a href="/stocks/{{ stock.code }}/">{{ stock.name}} -  {{stock.code }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
