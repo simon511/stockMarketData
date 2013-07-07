@@ -1,4 +1,4 @@
-from stocks.models import Stock, StockTransaction
+from stocks.models import Stock, StockHistoryTransaction
 from django.utils import timezone
 import sys,urllib,urllib2
 import sys
